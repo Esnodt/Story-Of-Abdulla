@@ -1,0 +1,31 @@
+﻿<Page x:Class="Story_Of_Abdulla.Episodes.Episode1_2Demon"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Story_Of_Abdulla.Episodes"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="Episode1_2Demon">
+
+    <Grid>
+
+        <Image Source="/Background/demon1.png" Stretch="UniformToFill" Margin="0 0 0 0"></Image>
+
+        <Grid>
+            <Border VerticalAlignment="Bottom" CornerRadius="10" HorizontalAlignment="Right">
+                
+            <Button x:Name="ButtonDemonGoNextEpisode" Content="Проснуться" Foreground="White" Height="50" Width="400">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.1">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Border>
+            
+        </Grid>
+        
+    </Grid>
+</Page>

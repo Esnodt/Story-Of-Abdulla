@@ -1,0 +1,180 @@
+﻿<Page x:Class="Story_Of_Abdulla.Episodes.Episode1_1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Story_Of_Abdulla.Episodes"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="Episode1_1">
+
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Width" Value="500"></Setter>
+            <Setter Property="Height" Value="475"></Setter>
+            <Setter Property="FontSize" Value="40"></Setter>
+            <Setter Property="FontFamily" Value="Monotype Corsiva"></Setter>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="TextAlignment" Value="Left"></Setter>
+            <Setter Property="TextWrapping" Value="Wrap"></Setter>
+        </Style>
+    </Page.Resources>
+
+
+    <Grid>
+        <Image Source="/Background/bonfire.jpg" Stretch="Fill"></Image>
+
+
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="700"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
+                <Button Content="Выход в главное меню" Click="ButtonBackMainMenu_Click" x:Name="ButtonBackMainMenu">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.1">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Border>
+
+            <Border Grid.Row="1" CornerRadius="10" Width="1850">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.08">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="Black" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <TextBlock x:Name="TextIfGonext3" Visibility="Visible" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1300" Height="300" Text="Идя по почве что проваливалась под твоими ногами, ты отчетливо почуял запах костра и горячей еды что готовится на нем - эти ощущения ты помнишь хорошо, на уровне инстинкта, в школьные годы ты часто ходил в походы с своим классом. Ты направился в сторону огня быстрым шагом, лес становился менее густым, а свет от луны будто манил тебя к себе..."></TextBlock>
+
+            </Border>
+
+            <Border Grid.Row="1" CornerRadius="10" Width="1850">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.08">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="Black" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <TextBlock x:Name="TextBonfire" Visibility="Visible" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="1300" Height="300" Text="Костер и человек - вот что ты увидел. 'Зачем вообще кому-то быть в такое время одному в глухом, холодном и темном лесу' подумал ты. Но тебя заботило лишь одно, холод и голод которыми ты был насквозь пронзен. у тебя не было другого выбора кроме как пойти к этому человку."></TextBlock>
+
+            </Border>
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                <Button Content="Надеяться на чудо и ждать" Width="300" Margin="50 0 0 0" x:Name="ButtonStopAndDream" Click="ButtonStopAndDream_Click" Foreground="White">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.2">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+
+                </Button>
+
+                <Button Content="Идти к этому человку" Width="300" Margin="50 0 0 0" x:Name="ButtonGoToHuman" Click="ButtonGoToHuman_Click" Foreground="White">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.2">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+
+
+            <Border Grid.Row="1" CornerRadius="10" Width="1850" >
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.08">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="Black" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <TextBlock x:Name="TextForHuman" Visibility="Collapsed" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1300" Height="300" Text="Вы подошли к человку, он никак не реагировал, окликнув его при этом пытаясь не напугать - он не поворачивался в вашу сторону, вы решили подойти ближе, ничего кроме шума ручья рядом не было слышно, даже ветер молчал словно не хотел нарушать тишину рядом с этим человеком."></TextBlock>
+            </Border>
+
+            <Border Grid.Row="1" CornerRadius="10" Width="1850">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.08">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="Black" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <TextBlock x:Name="TextForHuman2" Visibility="Collapsed" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="1300" Height="300" Text="Подойдя ближе, вы сели рядом на влажную траву перед ним, он держал в руках книгу и не двигаясь смотрел в нее. Она казалась вам знакомой - будто когдато давно вы видели ее и ее четкие очертания возникли у вас в голове" ></TextBlock>
+            </Border>
+
+            <StackPanel VerticalAlignment="Center" Grid.Row="1" HorizontalAlignment="Right" Margin="0 0 200 0">
+                <Image Source="/Background/загружено.jpg" Width="250" Visibility="Collapsed" x:Name="ImageBookV">
+                    <Image.OpacityMask>
+                        <SolidColorBrush Color="#FF5B3232" Opacity="0.9"/>
+                    </Image.OpacityMask>
+                </Image>
+            </StackPanel>
+
+
+            <Border Grid.Row="1" CornerRadius="10" Width="1850">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.08">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="Black" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <TextBlock x:Name="Textforguman3" Visibility="Collapsed" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1300" Height="400" 
+                           
+                           Text="'Где мы?' спросили вы - человек молчал и смотрел в свою книгу, атмосфера становилась жуткой и вам было явно не по себе. 
+                           
+                           
+                           Вы протянули руки и опустили голову в сторону костра чтоб согреть их и в этот же момент вы почувствовали как этот человек темным и пустым взглядом смотрел на вас не закрывая своей книги.
+                           
+                           
+                           
+                          
+                           'Тебе не сбежать, ты в плену боли и страданий, отныне и до конца твоих дней - это твое проклятье.'
+                           " ></TextBlock>
+            </Border>
+
+
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                <Button Content="Спросить где мы находимся?" Width="300" Margin="50 0 0 0" x:Name="ButtonGoDemon" Click="ButtonGoDemon_Click" Foreground="White" Visibility="Collapsed">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.2">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+
+                </Button>
+            </StackPanel>
+
+
+
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                <Button Content="Посмотреть на человека" Width="300" Margin="50 0 0 0" x:Name="ButtonGoDemon1" Click="ButtonGoDemon1_Click" Foreground="White" Visibility="Collapsed">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.2">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+
+                </Button>
+            </StackPanel>
+
+
+
+
+
+        </Grid>
+    </Grid>
+
+</Page>
